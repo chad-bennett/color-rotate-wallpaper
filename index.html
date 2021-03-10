@@ -1,0 +1,66 @@
+<!doctype html>
+
+<head>
+      <meta charset="UTF-8">
+      <title>color shifting wallpaper</title>
+      <meta name="description" content="color shifting wallpaper">
+      <meta name="author" content="chad bennett">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+            * {
+                  margin: 0;
+                  padding: 0;
+            }
+
+            html {
+                  width: 100%;
+                  height: 100%;
+
+            }
+
+            body {
+                  width: 100%;
+                  height: 100%;
+            }
+
+            img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  filter: hue-rotate(0deg);
+                  position: fixed;
+                  object-position: center bottom;
+                  animation-name: animation;
+                  animation-duration: 600s;
+                  animation-iteration-count: infinite;
+            }
+
+            @keyframes animation {
+                  0% {
+                        filter: hue-rotate(0deg);
+                  }
+
+                  25% {
+                        filter: hue-rotate(90deg);
+                  }
+
+                  50% {
+                        filter: hue-rotate(180deg);
+                  }
+
+                  75% {
+                        filter: hue-rotate(270deg);
+                  }
+
+                  100% {
+                        filter: hue-rotate(360deg);
+                  }
+            }
+      </style>
+</head>
+
+<body>
+      <img src="overcast.png" />
+</body>
+
+</html>
